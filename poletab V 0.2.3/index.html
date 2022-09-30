@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jscolor.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div class="pagebody" id="pagebody">
+</div>
+
+<div id="divbody" class="divbody">
+    <div class="maindiv" id="maindiv">
+        <div id="search-div-default" attrclassbef="" class="search-div search-div-top">
+            <form id="mp-search-form">
+                <button class="button-search" type="submit" value="search"><img id="btn-search-img" style="height: 25px;" src=""></button>
+                <input id="input_search_engine" class="input-search" type="search" placeholder="Search Here.." autocomplete="off"/>
+                <input id="input_search_engine2" style="display: none;" class="input-search" name="q" type="search">
+            </form>
+        </div>
+        <div class="main-bottom-menu">
+            <button id="btn-open-setting" style="height: 45px;width: 45px;background-color: white;padding: 5px;border-radius: 100%;outline: none;border: none;cursor: pointer;"><img style="height: 30px;width: 30px;" src="picture/settings.png"></button>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <!-- div setting menu s -->
+    <div id="div-main-menu-back" class="div-main-menu-back">
+
+    </div>
+    <div id="div-main-menu" class="div-main-menu">
+        <button id="btn-close-setting" style="position: absolute;right: 0px;top: 0px;" class="btn btn-danger">X</button>
+        <h2 style="text-align: center;">Settings</h2>
+            <div style="position: relative;width: 100%;" id="image_background_preview"></div>
+        <input style="display: none;" accept='image/*' type="file" id="input_image_background" name="files" />
+        <br>
+        <h5>Change Background</h5>
+        <label for="input_image_background" id="label_input_image_background" class="btn btn-info">From Local Storage</label>
+        <label id="btn-ifi" class="btn btn-info">From Internet</label>
+        <div id="div-ifi" style="display: none;">
+            <input class="form-control" style="margin-bottom: 5px;" id="input_url_background_source" placeholder="Add Image URL Here" type="url">
+            <button id="btn-input-url-confirm" class="btn btn-primary">Confirm</button>
+        </div>
+        <br><br>
+        <div>
+            <div style="display: inline;">Background Position : </div> 
+            <select style=" display: inline;width: auto;cursor: pointer;" id="input_background_position" class="form-control">
+                <option value="top">Top</option>
+                <option value="right">Right</option>
+                <option value="center">Center</option>
+                <option value="left">Left</option>
+                <option value="bottom">Bottom</option>
+                <option value="left top">left Top</option>
+                <option value="left center">Left Center</option>
+                <option value="left bottom">Left Bottom</option>
+                <option value="right top">Right Top</option>
+                <option value="right center">Right Center</option>
+                <option value="right bottom">Right Bottom</option>
+                <option value="center top">Center Top</option>
+                <option value="center center">Center Center</option>
+                <option value="center bottom">Center Bottom</option>
+            </select>
+        </div>
+        <hr>
+        <br>
+            <button id="change_default_search_engine" class="btn btn-info">Change Default Search Engine For This Tab</button>
+        <br><br>
+        <div>
+            <div style="display: inline;">Input Search Color And Transparency : </div> 
+            <input id="input_search_color_picker" class="form-control" style="width: auto;display: inline;" value="rgba(241, 241, 241, 1)" data-jscolor="">
+            <br><br>
+            <div style="display: inline;">Input Search Text Color : </div> 
+            <input id="input_text_search_color_picker" class="form-control" style="width: auto;display: inline;" value="rgb(0, 0, 0)" data-jscolor="">
+            <br><br>
+            <div style="display: inline;">Input Search Position : </div>
+            <select id="input_search_div_position" style="display: inline;width: auto;cursor: pointer;" id="" class="form-control">
+                <option value="top">Top</option>
+                <option value="bottom">Bottom</option>
+                <option value="hidden">Hide</option>
+            </select>
+        </div>
+        <br><br>
+        <button id="btn-credits" class="btn btn-primary">Credits</button>
+    </div>
+    <!-- div setting menu e -->
+
+    <!-- check default browser div s -->
+    <div class='div-chdb' id="div-chdb">
+        <h1 style='text-align: center;'>Please Choose Your Default Search Engine For This Tab</h1>
+        <br><br><br><br>
+        <h5 style="padding: 0px 5px;">*This will not change the default search engine in your browser</h5>
+        <br><br><br><br>
+        <div class="div-cdb">
+            <button class="btn-cdb-card" id="btn-cdb1">
+                <img class="cdb-pic" src="picture/google.png">
+                <br>
+                <a id="cdb-txt">GOOGLE</a>
+            </button>
+            <button class="btn-cdb-card" id="btn-cdb2">
+                <img class="cdb-pic" src="picture/bing.png">
+                <br>
+                <a id="cdb-txt">Bing</a>
+            </button>
+            <button class="btn-cdb-card" id="btn-cdb3">
+                <img class="cdb-pic" src="picture/yahoo.png">
+                <br>
+                <a id="cdb-txt">Yahoo</a>
+            </button>
+            <button class="btn-cdb-card" id="btn-cdb4">
+                <img class="cdb-pic" src="picture/duckduckgo.png">
+                <br>
+                <a id="cdb-txt">Duck Duck Go</a>
+            </button>
+            <button class="btn-cdb-card" id="btn-cdb5">
+                <img class="cdb-pic" src="picture/yandex.png">
+                <br>
+                <a id="cdb-txt">Yandex</a>
+            </button>
+        </div>
+    </div>
+    <!-- check default browser div e -->
+
+    <!-- credits s -->
+    <div id="div-credits" class="div-main-menu">
+        <br><br>
+        Bing logo
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <br>
+        Google logo
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <br>
+        Yahoo logo
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <br>
+        Yandex logo
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+    <!-- credits e -->
+</div>
+
+</body>
+</html>

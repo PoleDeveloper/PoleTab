@@ -1,0 +1,15 @@
+{
+    "name": "Pole Tab",
+    "description": "Edit Your Wallpaper And Search Bar Color or position Is Easy",
+    "version": "0.2.2",
+    "author": "PoleDev",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "logo.png",
+        "default_popup": "popup.html"
+    },
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    },
+    "permissions": ["activeTab"]
+}
